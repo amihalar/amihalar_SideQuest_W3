@@ -35,13 +35,13 @@ const gameBtn2 = {
 // when currentScreen === "game"
 function drawGame() {
   // Set background colour for the game screen
-  background(240, 230, 140);
+  image(fleetwoood, 0, 0, width, height);
 
   // ---- Title and instructions text ----
   fill(0); // black text
-  textSize(32);
+  // textSize(32);
   textAlign(CENTER, CENTER);
-  text("Game Screen", width / 2, 160);
+  // text("Game Screen", width / 2, 160);
 
   textSize(18);
   text(

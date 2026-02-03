@@ -10,6 +10,19 @@
 // ------------------------------------------------------------
 // drawStart() is called from main.js only when:
 // currentScreen === "start"
+
+let fleetwoood;
+let alice;
+let ledzep;
+let pinkfloyd;
+
+function preload() {
+  fleetwoood = loadImage("assets/fleetwood.png");
+  alice = loadImage("assets/alice.png");
+  ledzep = loadImage("assets/ledzep.png");
+  pinkfloyd = loadImage("assets/pinkfloyd.png");
+}
+
 function drawStart() {
   // Background colour for the start screen
   background(180, 225, 220); // soft teal background
