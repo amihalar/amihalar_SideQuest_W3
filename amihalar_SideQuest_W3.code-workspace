@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../libraries"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "amihalar_SideQuest_W3"
+  }
+}
