@@ -11,13 +11,13 @@
 // drawStart() is called from main.js only when:
 // currentScreen === "start"
 
-let fleetwoood;
+let fleetwood;
 let alice;
 let ledzep;
 let pinkfloyd;
 
 function preload() {
-  fleetwoood = loadImage("assets/fleetwood.png");
+  fleetwood = loadImage("assets/fleetwood.png");
   alice = loadImage("assets/alice.png");
   ledzep = loadImage("assets/ledzep.png");
   pinkfloyd = loadImage("assets/pinkfloyd.png");

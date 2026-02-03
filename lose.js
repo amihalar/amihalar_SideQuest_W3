@@ -33,13 +33,3 @@ function drawLose() {
 function loseMousePressed() {
   currentScreen = "start";
 }
-
-// ------------------------------
-// Keyboard input for lose screen
-// ------------------------------
-// R is commonly used for “restart” in games
-function loseKeyPressed() {
-  if (key === "r" || key === "R") {
-    currentScreen = "start";
-  }
-}

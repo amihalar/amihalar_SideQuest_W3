@@ -90,22 +90,6 @@ function mousePressed() {
 // keyPressed() runs once each time a key is pressed
 // ------------------------------
 // This routes keyboard input to the correct screen handler.
-function keyPressed() {
-  // Each screen *may* define a key handler:
-  // start.js         → startKeyPressed()
-  // instructions.js  → instrKeyPressed()
-  // game.js          → gameKeyPressed()
-  // win.js           → winKeyPressed()
-  // lose.js          → loseKeyPressed()
-
-  if (currentScreen === "start") startKeyPressed();
-  else if (currentScreen === "instr") instrKeyPressed();
-  else if (currentScreen === "game") gameKeyPressed?.();
-  else if (currentScreen === "win") winKeyPressed?.();
-  else if (currentScreen === "lose") loseKeyPressed?.();
-  else if (currentScreen === "level2") level2KeyPressed?.();
-  else if (currentScreen === "level3") level3KeyPressed?.();
-}
 
 // ------------------------------------------------------------
 // Shared helper function: isHover()
