@@ -20,6 +20,14 @@ const gameBtn = {
   label: "PRESS HERE", // text shown on the button
 };
 
+const gameBtn2 = {
+  x: 400, // x position (centre of the button)
+  y: 450, // y position (centre of the button)
+  w: 260, // width
+  h: 90, // height
+  label: "PRESS HERE", // text shown on the button
+};
+
 // ------------------------------
 // Main draw function for this screen
 // ------------------------------
@@ -45,6 +53,7 @@ function drawGame() {
   // ---- Draw the button ----
   // We pass the button object to a helper function
   drawGameButton(gameBtn);
+  drawGameButton(gameBtn2);
 
   // ---- Cursor feedback ----
   // If the mouse is over the button, show a hand cursor
@@ -92,6 +101,10 @@ function drawGameButton({ x, y, w, h, label }) {
 function gameMousePressed() {
   // Only trigger the outcome if the button is clicked
   if (isHover(gameBtn)) {
+    triggerRandomOutcome();
+  }
+
+  if (isHover(gameBtn2)) {
     triggerRandomOutcome();
   }
 }
