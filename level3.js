@@ -12,30 +12,30 @@
 // and interact with the button on the game screen.
 // Keeping this in one object makes it easier to move,
 // resize, or restyle the button later.
-const level2Btn = {
+const level3Btn = {
   x: 400, // x position (centre of the button)
   y: 450, // y position (centre of the button)
   w: 320, // width
   h: 90, // height
-  label: "'DIRT'", // text shown on the button
+  label: "'LED ZEPPELIN IV'", // text shown on the button
 };
 
-const level2Btn2 = {
+const level3Btn2 = {
   x: 400, // x position (centre of the button)
   y: 350, // y position (centre of the button)
   w: 320, // width
   h: 90, // height
-  label: "'JAR OF FLIES'", // text shown on the button
+  label: "'HOUSES OF THE HOLY'", // text shown on the button
 };
 
 // ------------------------------
 // Main draw function for this screen
 // ------------------------------
-// drawLevel2() is called from main.js *only*
-// when currentScreen === "level2"
-function drawLevel2() {
-  // Set background colour for the level2 screen
-  image(alice, 0, 0, width, height);
+// drawLevel3() is called from main.js *only*
+// when currentScreen === "level3"
+function drawLevel3() {
+  // Set background colour for the level3 screen
+  image(ledzep, 0, 0, width, height);
 
   // ---- Title and instructions text ----
   fill(0); // black text
@@ -48,13 +48,13 @@ function drawLevel2() {
 
   // ---- Draw the button ----
   // We pass the button object to a helper function
-  drawLevel2Button(level2Btn);
-  drawLevel2Button(level2Btn2);
+  drawLevel2Button(level3Btn);
+  drawLevel2Button(level3Btn2);
 
   // ---- Cursor feedback ----
   // If the mouse is over the button, show a hand cursor
   // Otherwise, show the normal arrow cursor
-  cursor(isHover(level2Btn) ? HAND : ARROW);
+  cursor(isHover(level3Btn) ? HAND : ARROW);
 }
 
 // ------------------------------
@@ -62,7 +62,7 @@ function drawLevel2() {
 // ------------------------------
 // This function is responsible *only* for drawing the button.
 // It does NOT handle clicks or game logic.
-function drawLevel2Button({ x, y, w, h, label }) {
+function drawLevel3Button({ x, y, w, h, label }) {
   rectMode(CENTER);
 
   // Check if the mouse is hovering over the button
@@ -93,14 +93,14 @@ function drawLevel2Button({ x, y, w, h, label }) {
 // Mouse input for this screen
 // ------------------------------
 // This function is called from main.js
-// only when currentScreen === "level2"
-function level2MousePressed() {
+// only when currentScreen === "level3"
+function level3MousePressed() {
   // Only trigger the outcome if the button is clicked
-  if (isHover(level2Btn)) {
+  if (isHover(level3Btn)) {
     currentScreen = "lose";
   }
 
-  if (isHover(level2Btn2)) {
-    currentScreen = "level3";
+  if (isHover(level3Btn2)) {
+    currentScreen = "level4";
   }
 }

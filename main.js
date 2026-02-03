@@ -55,6 +55,7 @@ function draw() {
   else if (currentScreen === "lose") drawLose();
   else if (currentScreen === "level2") drawLevel2();
   else if (currentScreen === "level3") drawLevel3();
+  else if (currentScreen === "level4") drawLevel4();
 
   // (Optional teaching note)
   // This “if/else chain” is a very common early approach.
@@ -84,6 +85,7 @@ function mousePressed() {
   else if (currentScreen === "lose") loseMousePressed?.();
   else if (currentScreen === "level2") level2MousePressed?.();
   else if (currentScreen === "level3") level3MousePressed?.();
+  else if (currentScreen === "level4") level4MousePressed?.();
 }
 
 // ------------------------------

@@ -17,18 +17,19 @@ let ledzep;
 let pinkfloyd;
 
 function preload() {
-  fleetwood = loadImage("assets/fleetwood.png");
-  alice = loadImage("assets/alice.png");
-  ledzep = loadImage("assets/ledzep.png");
-  pinkfloyd = loadImage("assets/pinkfloyd.png");
+  fleetwood = loadImage("images/fleetwood.png");
+  alice = loadImage("images/alice.png");
+  ledzep = loadImage("images/ledzep.png");
+  pinkfloyd = loadImage("images/pinkfloyd.png");
+  photo = loadImage("images/photo.png");
 }
 
 function drawStart() {
   // Background colour for the start screen
-  background(180, 225, 220); // soft teal background
+  image(photo, 0, 0, width, height);
 
   // ---- Title text ----
-  fill(30, 50, 60);
+  fill(255);
   textSize(46);
   textAlign(CENTER, CENTER);
   text("Stay Cultured!", width / 2, 180);
