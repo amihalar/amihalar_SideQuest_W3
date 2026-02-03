@@ -14,7 +14,7 @@ Edited by Amanda Mihalaros
 
 ## Description
 
-This p5.js project demonstrates a simple multi-screen game structure using a state-based approach. The example includes a start screen, an instructions screen with a back button, a basic game screen, and win/lose outcome screens. The focus is on showing how to separate screens into different files, route input based on the current game state, and design simple UI elements such as buttons and keyboard controls.
+This p5.js project demonstrates a simple multi-screen game structure using a state-based approach. The example includes a start screen, an instructions screen with a back button, 4 game screens, and win/lose outcome screens. For every right answer you go to the next level / game screen, and when you get it wrong you go to the lose screen. If you get through all levels you are brought to the win screen.
 
 ---
 
@@ -30,12 +30,16 @@ This p5.js project demonstrates a simple multi-screen game structure using a sta
 
 ## Assets
 
-N/A
+Assets can be found in the photos folder
 
 ---
 
 ## GenAI
 
 The code was written by Dr. Karen Cochrane but she used GenAI to write the comments.
+
+The rest of the code was then edited by Amanda Mihalaros.
+
+GenAI was NOT used in the updating or editing of the code to improve the game.
 
 ---
