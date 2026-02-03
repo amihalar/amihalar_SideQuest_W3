@@ -15,17 +15,17 @@
 const gameBtn = {
   x: 400, // x position (centre of the button)
   y: 550, // y position (centre of the button)
-  w: 260, // width
+  w: 290, // width
   h: 90, // height
-  label: "PRESS HERE", // text shown on the button
+  label: "FUTURE GAMES", // text shown on the button
 };
 
 const gameBtn2 = {
   x: 400, // x position (centre of the button)
   y: 450, // y position (centre of the button)
-  w: 260, // width
+  w: 290, // width
   h: 90, // height
-  label: "PRESS HERE", // text shown on the button
+  label: "TANGO IN THE NIGHT", // text shown on the button
 };
 
 // ------------------------------
@@ -44,11 +44,7 @@ function drawGame() {
   // text("Game Screen", width / 2, 160);
 
   textSize(18);
-  text(
-    "Click the button (or press ENTER) for a random result.",
-    width / 2,
-    210,
-  );
+  text("Select the correct album title.", width / 2, 210);
 
   // ---- Draw the button ----
   // We pass the button object to a helper function
@@ -101,11 +97,11 @@ function drawGameButton({ x, y, w, h, label }) {
 function gameMousePressed() {
   // Only trigger the outcome if the button is clicked
   if (isHover(gameBtn)) {
-    triggerRandomOutcome();
+    currentScreen = "win";
   }
 
   if (isHover(gameBtn2)) {
-    triggerRandomOutcome();
+    currentScreen = "lose";
   }
 }
 
